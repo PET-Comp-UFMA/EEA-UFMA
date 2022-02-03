@@ -1823,8 +1823,7 @@ th {
 
   .row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -1886,6 +1885,15 @@ th {
 }
 
 @media (max-width: 574px) {
+  #schedule .publico-alvo {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #schedule .simbolos-area {
+    margin-left: 0;
+  }
+
   #venue .venue-info h3 {
     font-size: 24px;
   }
