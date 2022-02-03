@@ -158,12 +158,82 @@ h6 {
 # Banner Section
 --------------------------------------------------------------*/
 
-#banner {
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  background-color: #ffffffe0;
-  padding: 40px 0 40px 0;
+
+.banner {
+  display: none;
+}
+  
+.banner-responsivo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: #fdfeff;
+}
+
+.banner-responsivo div {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner-responsivo div a {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.bloco{
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.bloco > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.bloco-texto{
+  width: 100%;
+  grid-row: 1 / span 2;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+}
+
+.bloco-texto2{
+  color: #fff;
+  background-color: #000;
+}
+
+#img-esq {
+  width: 35%;
+}
+
+#img-centro {
+  width: 100%;
+}
+
+#img-dir {
+  width: 25%;
+  padding: 5px 0px 5px 0px;
 }
 
 /*--------------------------------------------------------------
@@ -1900,5 +1970,67 @@ th {
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 360px){
+  /*--------------------------------------------------------------
+  # Banner Section
+  --------------------------------------------------------------*/
+
+
+  .banner {
+    display: none;
+  }
+    
+  .banner-responsivo {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .banner-responsivo div {
+    margin-top: 10px;
+  }
+
+  .banner-responsivo div > div {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .bloco-texto{
+    width: 100%;
+    grid-row: 1 / span 2;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+  }
+
+  .bloco-texto2{
+    color: #fff;
+    background-color: #000;
+  }
+
+  #img-esq {
+    width: 0%;
+  }
+
+  #img-centro {
+    width: 100%;
+  }
+
+  #img-dir {
+    width: 0%;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .container{
+    height: 0%;
+  }
+
+  #header, #header.header-scrolled, #header.header-fixed{
+    height: 0%;
+    display: none;
   }
 }
