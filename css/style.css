@@ -766,7 +766,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 90px;
+  top: 30px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +806,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
+  top: 5%;
   background: radial-gradient(#1097c4 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
@@ -860,9 +861,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro .play-btn:hover::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: 50%;
+  top: 5%;
   -webkit-transform: translateX(-40%) translateY(-50%);
   transform: translateX(-40%) translateY(-50%);
   width: 0;
@@ -878,6 +879,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn {
+  position: relative;
+  top: 4%;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -1934,6 +1937,11 @@ th {
   color: #1b100a;
   font-weight: 600;
 }
+
+.background{
+  background-color: #1d608f5b;
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
