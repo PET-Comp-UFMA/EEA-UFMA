@@ -32,27 +32,29 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom-style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="wrapper">
-    <div class="banner-responsivo">
-        <div>   
-            <a href="index.html" >
-                <img src="img/logo_eea.svg" alt="" class="img-fluid" id="img-esq">
-            </a>
-        </div>
-        <div class="bloco">
-            <a href="index.html" >
-                <div class="bloco-texto">I Encontro sobre Experiências Acadêmicas da UFMA</div>
-                <div class="bloco-texto2">Uso das Tecnologias de Informação e Comunicação em Tempos de Pandemia</div> 
-            </a>
-        </div>
-        <div>
-            <a href="https://portalpadrao.ufma.br/site" target="_blank"><img src="img/ufma.png" alt="" class="img-fluid" id="img-dir"></a>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-2 mt-4 mb-4">
+                <a href="index.html" >
+                    <img src="img/logo_eea.svg" alt="" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-sm-8 mt-4 mb-4">
+                <a href="index.html" class="text-decoration-none">
+                    <h1 class="title">I ENCONTRO SOBRE EXPERIÊNCIAS ACADÊMICAS DA UFMA</h1>
+                    <h2 class="subtitle">30 de Maio a 01 de Junho de 2022</h2>
+                </a>
+            </div>
+            <div class="col-sm-2 mt-4 mb-4 d-flex align-self-center">
+                <a href="http://eadparavc.dted.ufma.br" target="_blank"><img src="img/dted.png" alt="" class="img-fluid"></a>
+           </div>
         </div>
     </div>
     <!--==========================
@@ -64,12 +66,14 @@
                 <ul class="nav-menu">
                     <li class="menu-active"><a href="index.html">Home</a></li>
                     <li class="dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chamada</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="trabalhos.html">Chamada de Trabalhos</a> 
-                        </div>
-                        
-                     </a>
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chamada</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="trabalhos.html">Resumos Expandidos</a> 
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="objetos-aprendizagem.html">Objetos de Aprendizagem</a> 
+                            </div>
+                        </a>
                     </li>
                     <li><a href="inscricoes.html">Inscrições</a></li>
                     <li><a href="programacao.html">Programação</a></li>
@@ -79,9 +83,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="local.html">Local</a> 
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="comissao.html">Comissão Organizadora</a>     
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="documentos-oficiais.html">Documentos Oficiais</a>   
+                            <a class="dropdown-item" href="comissao.html">Comissão Organizadora</a>      
                         </div>
                      </a>
                     </li>
@@ -96,33 +98,33 @@
         <!--==========================
             Intro Section
         ============================-->
-      
         
         <div id="carouselExampleControls" class="carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-              </ol>
+            </ol>
             <div class="carousel-inner">
                 <div id="intro" class="carousel-item active">
-                    <div class="intro-container wow fadeIn">
+                    <div class="slider-banner">
                         <div class="background">
-                            <h1><span>Encontro sobre Experiências Acadêmicas da UFMA</span></h1>
-                            <h1>Uso das TICS em Tempos de Pandemia</h1>
+                            <div class="intro-container wow fadeIn">
+                                <h1><span>Encontro sobre Experiências Acadêmicas da UFMA</span></h1>
+                                <h1>Uso das TICS em Tempos de Pandemia</h1>
+                                <a href="https://www.youtube.com/channel/UCqgFCMBPYVc4PRSDbyiEi_Q" class="venobox play-btn mb-4 vbox-item" data-vbtype="video" data-autoplay="true"></a>
+                                <a href="#about" class="about-btn scrollto">Sobre o Evento</a>
+                            </div>
                         </div>
-                        <a href="https://www.youtube.com/watch?v=BQFGN4nZB2U" class="venobox play-btn mb-4 vbox-item" data-vbtype="video" data-autoplay="true"></a>
-                        <a href="#about" class="about-btn scrollto">Sobre o Evento</a>
-                    </div>
+                    </div>   
                 </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                <span class="visually-hidden"></span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                <span class="visually-hidden"></span>
-              </a>
-              </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden"></span>
+                </a>
+            </div>
         </div>
 
         
@@ -131,20 +133,15 @@
             About Section
         ============================-->
         <section id="about">
-            <div class="container">
+            <div class="container text-center">
                 <div class="row">
-                    <center>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <h2>Sobre o Evento</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing 
-                        and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-                        Ipsum passages, and more recently with desktop publishing software like Aldus 
-                        PageMaker including versions of Lorem Ipsum.</p>
-                    </div></center>
+                        <p>As competências digitais tornaram-se essenciais para o processo de ensino e aprendizagem, envolvendo a utilização segura e crítica das TDIC (Tecnologias Digitais de Informação e Comunicação) e da Internet para pesquisar, encontrar, avaliar, processar, armazenar, utilizar, produzir, apresentar e trocar informações, inclusive em rede. Nesse contexto, o I Encontro sobre Experiências Acadêmicas da UFMA (I EEA da UFMA) é um evento de caráter acadêmico e técnico-científico, com o objetivo de permitir que toda a comunidade da Universidade Federal do Maranhão (UFMA)  possa trocar experiências, aprender e divulgar ações bem sucedidas no contexto de ensino e trabalho remoto decorrentes da Pandemia da COVID-19.</p>
+                        <p>O evento é direcionado para todos os públicos dentro da Universidade Federal do Maranhão, envolvendo: professores, técnicos e alunos, buscando, sobretudo,  atender às cinco áreas da competência digital: informação, comunicação, criação de conteúdo, segurança e resolução de problemas. Além disso, serão oferecidos tutoriais digitais para capacitação e atualização de todos os públicos do evento,  a fim de que estes possam melhor utilizar os diversos instrumentos elaborados para o desenvolvimento da competência digital dos professores, técnicos e alunos de nossa Instituição.
+                        <p>O I EEA da UFMA tem como tema “O Uso das TICs em Tempos de Pandemia” e será organizado pela Diretoria de Tecnologias na Educação (DTED) da Universidade Federal do Maranhão (UFMA) em parceria com a Superintendência de Tecnologia da Informação (STI) da UFMA . O EEA da UFMA será realizado no formato remoto devido à pandemia.</p>
+                        <p>Este evento foi desenvolvido especialmente para você, membro da UFMA, participe!</p>
+                        </div>
                 </div>
             </div>
         </section>
@@ -159,27 +156,37 @@
                 <div class="section-header">
                     <h2>Organização</h2>
                 </div>
-
-
-
                 <div class="row no-gutters supporters-wrap clearfix">
-
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-4 col-md-4 col-xs-6">
                         <div class="supporter-logo">
-                            <a href="https://portais.ufma.br/PortalUfma/index.jsf" target="_blank">
-                                <img src="img/ufma.png" class="img-fluid" alt="">
+                            <a href="http://eadparavc.dted.ufma.br" target="_blank">
+                                <img src="img/dted.png" class="img-fluid" alt="">
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                </div>
+                
+                <div class="section-header">
+                    <h2>Apoio</h2>
+                </div>
+                <div class="row no-gutters supporters-wrap clearfix">
+                    <div class="col-lg-4 col-md-4 col-xs-6">
                         <div class="supporter-logo">
-                            <a href="https://portais.ufma.br/PortalUfma/index.jsf" target="_blank">
-                                <img src="img/logo_eea.png" class="img-fluid" alt="">
+                            <a href="https://portalpadrao.ufma.br/sti" target="_blank">
+                                <img src="img/sti.png" class="img-fluid" alt="">
                             </a>
                         </div>
                     </div>
-
+                </div>
+                
+                <div class="section-header">
+                    <h2>Patrocínio</h2>
+                </div>
+                <div class="row no-gutters supporters-wrap clearfix">
+                    <div class="col-lg-2 col-md-4 col-xs-6">
+                        <div class="supporter-logo">
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -196,7 +203,7 @@
             <div class="footer-info" id="contatos">
                 <h4 >Contatos</h4>
                 <div id ="email">
-                    <strong>E-mail:</strong> secretaria.EEA.UFMA@gmail.com
+                    <strong>E-mail:</strong> secretaria.eea@ufma.br
                 </div>
                 <div class="social-links">
                     <a href="https://www.instagram.com/eea.ufma/" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -233,6 +240,7 @@
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 
   
