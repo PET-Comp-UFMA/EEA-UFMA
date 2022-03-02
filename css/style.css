@@ -158,11 +158,10 @@ h6 {
 # Banner Section
 --------------------------------------------------------------*/
 
-
 .banner {
   display: none;
 }
-  
+
 .banner-responsivo {
   display: flex;
   flex-direction: row;
@@ -198,7 +197,7 @@ h6 {
   margin: auto;
 }
 
-.bloco{
+.bloco {
   display: grid;
   grid-template-columns: auto;
   text-align: center;
@@ -211,7 +210,7 @@ h6 {
   font-size: 30px;
 }
 
-.bloco-texto2{
+.bloco-texto2 {
   color: #fff;
   background-color: #000;
 }
@@ -223,7 +222,6 @@ h6 {
 
 .subtitle {
   font-family: Montserrat;
-
 }
 
 b {
@@ -238,11 +236,11 @@ b {
   width: 100%;
 }
 
-#img-dir{
-  width:35%;
+#img-dir {
+  width: 35%;
 }
-#img-dir2{
-  width:55%;
+#img-dir2 {
+  width: 55%;
   padding: 5px 10px 5px 10px;
 }
 /*--------------------------------------------------------------
@@ -532,7 +530,7 @@ b {
 }
 
 #mobile-nav ul li a {
-  color: #fff;
+  color: #000;
   font-size: 17px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -1317,8 +1315,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #supporters .supporter-logo:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #supporters img {
@@ -1685,6 +1683,12 @@ th {
   font-size: 14px;
 }
 
+.fixar-rodape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 #footer .footer-top {
   background: #3c4858;
   padding: 5px 15px 5px 15px;
@@ -1960,7 +1964,7 @@ th {
   justify-content: center;
 }
 
-.slider-banner  .background {
+.slider-banner .background {
   background: #1097c42f;
   display: flex;
   flex-direction: column;
@@ -2017,16 +2021,15 @@ th {
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 360px) {
   /*--------------------------------------------------------------
   # Banner Section
   --------------------------------------------------------------*/
 
-
   .banner {
     display: none;
   }
-    
+
   .banner-responsivo {
     display: grid;
     grid-template-columns: auto;
@@ -2042,7 +2045,7 @@ th {
     font-size: 30px;
   }
 
-  .bloco-texto{
+  .bloco-texto {
     width: 100%;
     grid-row: 1 / span 2;
     font-family: Montserrat;
@@ -2051,8 +2054,9 @@ th {
     color: #000;
   }
 
-
-  #header, #header.header-scrolled, #header.header-fixed{
+  #header,
+  #header.header-scrolled,
+  #header.header-fixed {
     height: 0%;
     display: none;
   }
