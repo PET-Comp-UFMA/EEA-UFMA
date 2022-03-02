@@ -112,6 +112,17 @@ h6 {
   color: #fff;
 }
 
+#banner h1 {
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+#banner h2 {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
 /* Sections Header
 --------------------------------*/
 
@@ -154,95 +165,6 @@ h6 {
   background-color: #f6f7fd;
 }
 
-/*--------------------------------------------------------------
-# Banner Section
---------------------------------------------------------------*/
-
-.banner {
-  display: none;
-}
-
-.banner-responsivo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  background-color: #fdfeff;
-}
-
-.banner-responsivo div {
-  display: inline;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
-.banner-responsivo div a {
-  display: inline;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  margin: auto;
-}
-
-.bloco {
-  display: grid;
-  grid-template-columns: auto;
-  text-align: center;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.bloco > div {
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-.bloco-texto2 {
-  color: #fff;
-  background-color: #000;
-}
-
-.title {
-  font-family: Montserrat;
-  font-weight: bold;
-}
-
-.subtitle {
-  font-family: Montserrat;
-}
-
-b {
-  font-size: 18px;
-}
-
-#img-esq {
-  width: 30%;
-}
-
-#img-centro {
-  width: 100%;
-}
-
-#img-dir {
-  width: 35%;
-}
-#img-dir2 {
-  width: 55%;
-  padding: 5px 10px 5px 10px;
-}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -474,7 +396,7 @@ b {
 }
 
 .nav-menu ul li:hover > a {
-  background: #1097c4;
+  background: #000;
   color: #fff;
 }
 
@@ -500,7 +422,7 @@ b {
 }
 
 #mobile-nav-toggle i {
-  color: #1097c4;
+  color: #000;
 }
 
 /* Mobile Nav Styling */
@@ -511,8 +433,7 @@ b {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: #1097c4;
-
+  background: #fff;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -594,166 +515,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-#intro-2 {
-  width: 100%;
-  height: 100vh;
-  background: url(../img/ccet.jpeg) top center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-#intro-2:before {
-  content: "";
-  background: rgba(19, 17, 13, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#intro-2 .intro-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 90px;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
-}
-
-#intro-2 h1 {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-#intro-2 h1 span {
-  color: #8155ba;
-}
-
-#intro-2 p {
-  color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-#intro-2 .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#8155ba 50%, rgba(101, 111, 150, 0.15) 52%);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#intro-2 .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-#intro-2 .play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  top: -15%;
-  left: -15%;
-  background: #1097c4;
-}
-
-#intro-2 .play-btn:hover::after {
-  border-left: 15px solid #1097c4;
-  -webkit-transform: scale(20);
-  transform: scale(20);
-}
-
-#intro-2 .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-#intro-2 .about-btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #1097c4;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #1097c4;
-}
-
-#intro-2 .about-btn:hover {
-  background: #1097c4;
-  color: #1097c4;
-}
 
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/image_intro.png) top center;
+  background: url(../img/banner_slider.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -770,9 +536,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro .intro-container {
   position: absolute;
-  bottom: 0;
   left: 0;
   top: 30px;
+  bottom: 30px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,22 +555,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  background-color: #00000054;
 }
 
 #intro h1 {
-  color: #fff;
+  color: #fffffffd;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
+#intro h2 {
+  color: #fffffffd;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 #intro h1 span {
-  color: #fff;
+  color: #fffffffd;
 }
 
 #intro p {
-  color: #ebebeb;
+  color: #fffffffd;
   font-weight: 700;
   font-size: 20px;
 }
@@ -813,7 +588,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 94px;
   height: 94px;
   top: 5%;
-  background: radial-gradient(#1097c4 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#fffffffd 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -831,7 +606,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid #1097c477;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -856,11 +631,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid transparent;
   top: -15%;
   left: -15%;
-  background: #1097c4;
+  background: #fffffffd;
 }
 
 #intro .play-btn:hover::after {
-  border-left: 15px solid #1097c4;
+  border-left: 15px solid #fffffffd;
   -webkit-transform: scale(20);
   transform: scale(20);
 }
@@ -888,8 +663,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   top: 4%;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -897,10 +672,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: #fff;
+  text-transform: uppercase;
+  color: #fffffffd;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #fff;
+  border: 2px solid #fffffffd;
 }
 
 #intro-2 .about-btn:hover {
@@ -1925,7 +1701,7 @@ th {
   }
 
   #intro {
-    background-image: url(../img/image_intro.png);
+    background-image: url(../img/banner_slider.jpg);
   }
 
   #intro h1 {
@@ -1952,7 +1728,7 @@ th {
 
 .slider-banner {
   align-items: center;
-  background-image: url(../img/image_intro.png);
+  background-image: url(../img/banner_slider.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1962,16 +1738,6 @@ th {
   flex-direction: column;
   height: 100%;
   justify-content: center;
-}
-
-.slider-banner .background {
-  background: #1097c42f;
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  justify-content: center;
-  padding: 10px;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -2021,43 +1787,33 @@ th {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px){
   /*--------------------------------------------------------------
   # Banner Section
   --------------------------------------------------------------*/
+  #header.header-scrolled, #header.header-fixed {
+    display: none;
+    height: 0px;
+  }
 
-  .banner {
+  #banner .col-sm-2 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  #banner .container {
+    margin-top: 1.5em;
+  }
+
+  #banner img.img-fluid {
     display: none;
   }
 
-  .banner-responsivo {
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+  #intro h1 {
+    font-size: 34px;
   }
 
-  .banner-responsivo div {
-    margin-top: 10px;
-  }
-
-  .banner-responsivo div > div {
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-  .bloco-texto {
-    width: 100%;
-    grid-row: 1 / span 2;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 25px;
-    color: #000;
-  }
-
-  #header,
-  #header.header-scrolled,
-  #header.header-fixed {
-    height: 0%;
-    display: none;
+  #intro h2 {
+    font-size: 24px;
   }
 }
