@@ -1087,12 +1087,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
-  height: 160px;
+  height: 200px;
 }
 
 #supporters .supporter-logo:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #supporters img {
