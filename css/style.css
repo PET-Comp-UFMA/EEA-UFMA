@@ -123,6 +123,10 @@ h6 {
   font-family: Montserrat;
 }
 
+#logos-mobile {
+  display: none;
+}
+
 /* Sections Header
 --------------------------------*/
 
@@ -1682,6 +1686,31 @@ th {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
 
+  #logos-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: -40px 0;
+  }
+
+  #logos-mobile a {
+    margin: 0 auto;
+  }
+
+  #logos-mobile img.img-fluid {
+    margin-left: 10%;
+    width: 75%;
+  }
+
+  #banner img.img-fluid {
+    display: none;
+  }
+
+  #banner h2 {
+    font-size: 16px;
+  }
+
   .row {
     display: flex;
     flex-direction: column;
@@ -1773,6 +1802,11 @@ th {
   #venue .venue-info h3 {
     font-size: 24px;
   }
+
+  #logos-mobile img.img-fluid {
+    margin-left: 10%;
+    width: 75%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1787,11 +1821,12 @@ th {
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   /*--------------------------------------------------------------
   # Banner Section
   --------------------------------------------------------------*/
-  #header.header-scrolled, #header.header-fixed {
+  #header.header-scrolled,
+  #header.header-fixed {
     display: none;
     height: 0px;
   }
@@ -1803,10 +1838,6 @@ th {
 
   #banner .container {
     margin-top: 1.5em;
-  }
-
-  #banner img.img-fluid {
-    display: none;
   }
 
   #intro h1 {
