@@ -891,6 +891,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-items: center;
 }
 
+.youtube-link-topo {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.youtube-link-topo a {
+  color: #152b79;
+}
+
 #schedule .nav-tabs {
   text-align: center;
   margin: auto;
