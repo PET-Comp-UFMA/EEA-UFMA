@@ -152,8 +152,8 @@
           <div class="col-md-7">
             <h4>Aprenda a criar eBooks e banners usando o Figma: Dicas e exemplos práticos</h4>
             <p>Apresentador(a):
-              <button title="Luis Rivero" 
-              data-toggle="popover" data-trigger="hover" 
+              <button title="Luis Rivero" data-container="body"
+              data-toggle="popover" data-trigger="hover" data-placement="right"
               data-content="Doutor em Informática pela UFAM (título obtido em 2017) e Professor Adjunto A do Departamento de Informática da Universidade Federal do Maranhão, onde atua em cursos de graduação. <br> <i>Lattes: <a href='http://lattes.cnpq.br/8534667641706692' target='_blank'>Luis Rivero</a></i>" class="button-popover"> Prof. Dr. Luis Rivero</a>
             </p>
           </div>
@@ -191,7 +191,12 @@
           </div>
           <div class="col-md-7">
             <h4>Aprenda a gerar conteúdos em vídeo de forma rápida e fácil</h4>
-            <p>Apresentador(a): Dra. Márcia Guedes</p>
+            <p>Apresentador(a): 
+              <button title="Márcia Guedes" 
+              data-toggle="popover" data-trigger="hover" 
+              data-content="Possui mestrado em Língua Portuguesa pela Pontifícia Universidade Católica de São Paulo, doutorado em Linguística e Semiótica, pela Universidade de São Paulo, e pós-doutorado também na Pontifícia Universidade de São Paulo. Faz parte do banco de avaliadores do INEP e é avaliadora ad hoc do Instituto Federal do Maranhão. É professora associada do Bacharelado Interdisciplinar em Ciência e Tecnologia da Universidade Federal do Maranhão. <br> <i>Lattes: <a href='http://lattes.cnpq.br/6503433740335752' target='_blank'>Márcia Guedes</a></i>" class="button-popover">Profa. Dra. Márcia Guedes</a>
+              </button>
+            </p>
           </div>
         </div>
         <div class="row schedule-item">
@@ -545,7 +550,7 @@
 
   <script>
     $('[data-toggle="popover"]').popover({
-      trigger: "hover click",
+      trigger: "hover focus",
       sanitizer: false,
       html: true
     });
