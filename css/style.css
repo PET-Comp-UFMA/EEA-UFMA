@@ -1075,7 +1075,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
-
+.button-popover {
+  border: none;
+  margin: 0 -5px;
+  background: none;
+  color: #1097c4;
+  font-style: italic;
+  text-decoration: underline;
+}
 #supporters {
   padding: 60px 0;
 }
